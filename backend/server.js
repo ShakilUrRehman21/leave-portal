@@ -28,11 +28,11 @@ app.use('/api/leaves', leaveRoutes);
 
 // Root Health Check API Route
 app.get('/', (req, res) => {
-    res.send('Leave Management Server is running!');
+    res.send('LeavePortal Server is running!');
 });
 
 app.get('/api', (req, res) => {
-    res.send('Leave Management API is running...');
+    res.send('LeavePortal API is running...');
 });
 
 // Error handler

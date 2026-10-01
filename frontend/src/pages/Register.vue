@@ -49,7 +49,7 @@ const handleRegister = async () => {
         <div class="w-10 h-10 mx-auto mb-3 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow-xs">
           <CalendarCheck2 class="w-5 h-5" />
         </div>
-        <h1 class="text-xl font-bold tracking-tight text-slate-900">Create your account</h1>
+        <h1 class="text-xl font-bold tracking-tight text-slate-900">Create your LeavePortal account</h1>
         <p class="text-xs text-slate-500 mt-1">Start managing workplace leave requests in seconds</p>
       </div>
 

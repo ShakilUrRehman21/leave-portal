@@ -45,7 +45,7 @@ const handleLogin = async () => {
         <div class="w-10 h-10 mx-auto mb-3 rounded-xl bg-slate-900 text-white flex items-center justify-center shadow-xs">
           <CalendarCheck2 class="w-5 h-5" />
         </div>
-        <h1 class="text-xl font-bold tracking-tight text-slate-900">Sign in to LeaveHQ</h1>
+        <h1 class="text-xl font-bold tracking-tight text-slate-900">Sign in to LeavePortal</h1>
         <p class="text-xs text-slate-500 mt-1">Manage and track your organization's time off</p>
       </div>
 

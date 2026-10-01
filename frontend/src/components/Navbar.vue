@@ -40,7 +40,7 @@ const logout = () => {
           <div>
             <div class="flex items-center gap-2">
               <span class="font-bold text-base tracking-tight text-slate-900">
-                LeaveHQ
+                LeavePortal
               </span>
               <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">
                 {{ isEmployer ? 'Manager Portal' : 'Employee Portal' }}
