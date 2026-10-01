@@ -1,4 +1,4 @@
-# Leave Management System
+# Leave Portal
 
 A simple full-stack web application that allows **employees to apply for leave** and **employers to approve or reject leave requests**. The application demonstrates role-based authentication, REST APIs, and cloud deployment using modern web technologies.
 
