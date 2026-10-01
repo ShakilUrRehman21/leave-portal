@@ -26,6 +26,10 @@ const leaveRoutes = require('./routes/leaveRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/leaves', leaveRoutes);
 
+// Fallback aliases in case client baseURL omits /api
+app.use('/auth', authRoutes);
+app.use('/leaves', leaveRoutes);
+
 // Root Health Check API Route
 app.get('/', (req, res) => {
     res.send('LeavePortal Server is running!');
