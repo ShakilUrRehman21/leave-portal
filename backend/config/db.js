@@ -3,16 +3,17 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
     try {
         if (!process.env.MONGO_URI) {
-            console.warn("MongoDB URI is not defined. Please add MONGO_URI to .env file to connect.");
-            // For local development without a URI, we can bypass crashing,
-            // but typically we exit. We will exit 1 as standard.
+            console.warn("MongoDB URI is not defined. Please add MONGO_URI to backend/.env to connect.");
             return;
         }
-        const conn = await mongoose.connect(process.env.MONGO_URI);
+        const conn = await mongoose.connect(process.env.MONGO_URI, {
+            dbName: 'leave_management',
+            serverSelectionTimeoutMS: 15000,
+        });
         console.log(`MongoDB Connected: ${conn.connection.host}`);
     } catch (error) {
         console.error(`MongoDB Connection Error: ${error.message}`);
-        process.exit(1);
+        console.warn('Backend server remains active, but database operations will fail until MONGO_URI is updated.');
     }
 };
 

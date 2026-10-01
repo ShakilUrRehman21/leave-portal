@@ -26,7 +26,11 @@ const leaveRoutes = require('./routes/leaveRoutes');
 app.use('/api/auth', authRoutes);
 app.use('/api/leaves', leaveRoutes);
 
-// Root Health Check API Route (optional)
+// Root Health Check API Route
+app.get('/', (req, res) => {
+    res.send('Leave Management Server is running!');
+});
+
 app.get('/api', (req, res) => {
     res.send('Leave Management API is running...');
 });
